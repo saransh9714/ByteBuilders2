@@ -28,11 +28,10 @@
   </header>
 
   <main>
-    <section id="about" class="about">
-      <h2>About</h2>
-      <p class="typewriter">Nexora is a powerful forensic tool built to analyze digital data with precision.</p>
-      <p class="hidden">It simplifies complex investigations through structured parsing and visual insights.</p>
-      <p class="hidden">Whether it's logs, CSVs, or other formats — Nexora makes digital forensics smarter.</p>
+    <section id="home" class="upload">
+      <h2>Upload Your File</h2>
+      <input type="file" id="fileInput" multiple accept=".json,.csv,.txt" />
+      <button id="analyzeBtn">Analyze</button>
     </section>
     <section class="results">
       <h2>Parsed Results</h2>
@@ -43,8 +42,12 @@
       <canvas id="timelineChart"></canvas>
     </section>
     <section id="about" class="about">
-      <h2>About Nexora</h2>
-      <p>Nexora is a cutting-edge digital forensics tool designed to help investigators parse, visualize, and make sense of complex data quickly and accurately.</p>
+      <h2>About</h2>
+      <div class="type-sequence">
+        <p class="type type-1">Nexora is a powerful forensic tool built to analyze digital data with precision.</p>
+        <p class="type type-2">It simplifies complex investigations through structured parsing and visual insights.</p>
+        <p class="type type-3">Whether it's logs, CSVs, or other formats — Nexora makes digital forensics smarter.</p>
+      </div>
     </section>
     <section id="gallery" class="gallery">
       <h2>Gallery</h2>
