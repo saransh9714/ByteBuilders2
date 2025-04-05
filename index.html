@@ -1,0 +1,36 @@
+<!-- ForensiX - Digital Forensics Dashboard -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ForensiX - Digital Forensics Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🕵️‍♂️ ForensiX Dashboard</h1>
+    <p>Upload and analyze digital evidence files</p>
+  </header>
+
+  <main>
+    <section class="upload">
+      <input type="file" id="fileInput" multiple accept=".json,.csv,.txt" />
+      <button id="analyzeBtn">Analyze</button>
+    </section>
+
+    <section class="results">
+      <h2>Parsed Results</h2>
+      <div id="output"></div>
+    </section>
+
+    <section class="charts">
+      <h2>Visualizations</h2>
+      <canvas id="timelineChart"></canvas>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
