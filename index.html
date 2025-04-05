@@ -1,32 +1,62 @@
-<!-- ForensiX - Digital Forensics Dashboard -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ForensiX - Digital Forensics Dashboard</title>
+  <title>Nexora</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>🕵️‍♂️ ForensiX Dashboard</h1>
-    <p>Upload and analyze digital evidence files</p>
+  <header class="sticky-header">
+    <div class="nav-container">
+      <h1 class="brand">nexora.</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section class="upload">
-      <input type="file" id="fileInput" multiple accept=".json,.csv,.txt" />
-      <button id="analyzeBtn">Analyze</button>
+    <section id="about" class="about">
+      <h2>About</h2>
+      <p class="typewriter">Nexora is a powerful forensic tool built to analyze digital data with precision.</p>
+      <p class="hidden">It simplifies complex investigations through structured parsing and visual insights.</p>
+      <p class="hidden">Whether it's logs, CSVs, or other formats — Nexora makes digital forensics smarter.</p>
     </section>
-
     <section class="results">
       <h2>Parsed Results</h2>
       <div id="output"></div>
     </section>
-
     <section class="charts">
       <h2>Visualizations</h2>
       <canvas id="timelineChart"></canvas>
+    </section>
+    <section id="about" class="about">
+      <h2>About Nexora</h2>
+      <p>Nexora is a cutting-edge digital forensics tool designed to help investigators parse, visualize, and make sense of complex data quickly and accurately.</p>
+    </section>
+    <section id="gallery" class="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <img src="img/sample1.png" alt="Visualization 1" />
+        <img src="img/sample2.png" alt="Visualization 2" />
+        <img src="img/sample3.png" alt="Visualization 3" />
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <p>Have questions or feedback? Reach out to us at <a href="mailto:contact@nexora.com">contact@nexora.com</a>.</p>
     </section>
   </main>
 
